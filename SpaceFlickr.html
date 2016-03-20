@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Space Flickr Feed</title>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="SpaceFlickr.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Space Images</h1> 
+
+<div id="feed"></div>
+ 
+<script>
+(function() {
+  var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?tags=space&tagmode=any&format=json&jsoncallback=?";
+  $.getJSON( flickrAPI, {
+  })
+    .done(function( data ) {
+      $.each( data.items, function( i, item ) {
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#feed" );
+        if ( i === 20 ) {
+          return false;
+        }
+      });
+    });
+})();
+</script>
+    
+</body>
+</html>
