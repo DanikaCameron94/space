@@ -1,0 +1,51 @@
+h1 {
+    
+text-align: justify;
+    
+font-family: monospace;
+    
+color: midnightblue;
+    
+font-size: 30px;
+    
+text-shadow: 1px 1px 1px white;
+
+}
+
+
+img {
+    
+width: 20%;
+    
+float: none;
+
+margin: 5px 5px 5px 5px;
+box-shadow: 2px 2px 2px 2px white;
+
+}
+
+
+
+p {
+font-family: Arial;
+
+color: white;
+    
+font-size: 14px;
+
+text-shadow: 1px 1px 1px gray;
+
+float: right;
+}
+
+#feed {
+    
+max-width: 800px;
+    
+max-height: 800px;
+  
+}
+
+body {
+background-image: url("https://i.ytimg.com/vi/Kg4CRIDXkGg/maxresdefault.jpg");
+}
